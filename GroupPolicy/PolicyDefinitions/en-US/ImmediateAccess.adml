@@ -11,17 +11,17 @@
       <string id="ImmediateAccessExplain">
 Internal Probe:
 ---------------
-Enter the HTTPS enabled URL that the Immediate Access VPN service will use to determine if the comptuer is currently connected to the corporate network. The probe must only be accessible within the corporate network and have a valid certificate.
+Enter the HTTPS enabled URL that the Immediate Access VPN service will use to determine if the computer is currently connected to the corporate network. The probe must only be accessible within the corporate network and have a valid certificate.
 
 E.g: ( https://probe.ad.contoso.com/ )
 
 VPN Profile List:
 -----------------
-Enter a list of VPN profiles that Immediate Access VPN service will dial when the Internal Probe is not available. Seperate each entry by a return. (Enter in order of most priority to least priority)
+Enter a list of VPN profiles that Immediate Access VPN service will dial when the Internal Probe is not available. Separate each entry by a return, in order of high priority to the least.
 
 E.g: ( PhilidalphiaPA - VPN )
 
-If "Not Configured" or "Disabled", the Immediate Access service will shutdown and not run.
+If "Not Configured" or "Disabled", the Immediate Access service will shut down and not run.
       </string>
       <string id="ProbeTimeoutS">Probe Timeout</string>
       <string id="ProbeTimeoutSExplain">
@@ -51,7 +51,7 @@ If "Not Configured" or "Disabled", the value will be 1500.
       </string>
       <string id="VpnServerConnectAttempts">Vpn Server Connect Attempts</string>
       <string id="VpnServerConnectAttemptsExplain">
-Enter the ammount of attempts Immediate Access will make to connect to a VPN profile.
+Enter the number of attempts Immediate Access will make to connect to a VPN profile.
 
 If "Not Configured" or "Disabled", the value will be 3.
       </string>

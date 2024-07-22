@@ -10,9 +10,11 @@ using System.ServiceProcess;
 using System.Security.Principal;
 using System.Linq;
 using System.Net.NetworkInformation;
-using PInvoke;
 using System.IO;
 using System.Threading;
+using Windows.Win32;
+using Windows.Win32.Foundation;
+using Windows.Win32.UI.WindowsAndMessaging;
 
 namespace ImmediateAccessTray
 {
@@ -259,9 +261,9 @@ namespace ImmediateAccessTray
             };
             nConsoleProc.Start();
             while (nConsoleProc.MainWindowHandle.ToInt32() == 0x0) Thread.Sleep(10);
-            User32.SetParent(nConsoleProc.MainWindowHandle, tpLogs.Handle);
-            User32.SetWindowLong(nConsoleProc.MainWindowHandle, User32.WindowLongIndexFlags.GWL_STYLE, User32.SetWindowLongFlags.WS_VISIBLE);
-            User32.SetWindowPos(nConsoleProc.MainWindowHandle, IntPtr.Zero, 0, 0, tpLogs.Width, tpLogs.Height, User32.SetWindowPosFlags.SWP_NOACTIVATE);
+            PInvoke.SetParent(new HWND(nConsoleProc.MainWindowHandle), (HWND)tpLogs.Handle);
+            PInvoke.SetWindowLong(new HWND(nConsoleProc.MainWindowHandle), WINDOW_LONG_PTR_INDEX.GWL_STYLE,  (int)WINDOW_STYLE.WS_VISIBLE);
+            PInvoke.SetWindowPos(new HWND(nConsoleProc.MainWindowHandle), new HWND(IntPtr.Zero), 0, 0, tpLogs.Width, tpLogs.Height, SET_WINDOW_POS_FLAGS.SWP_NOACTIVATE);
             tpLogs.Show();
         }
         /// <summary>
@@ -365,9 +367,9 @@ namespace ImmediateAccessTray
         {
             if (nConsoleProc != null && !nConsoleProc.HasExited)
             {
-                User32.SetWindowPos(nConsoleProc.MainWindowHandle, IntPtr.Zero, 0, 0, tpLogs.Width, tpLogs.Height,
-                    User32.SetWindowPosFlags.SWP_NOACTIVATE |
-                    User32.SetWindowPosFlags.SWP_NOMOVE
+                PInvoke.SetWindowPos(new HWND(nConsoleProc.MainWindowHandle), new HWND(IntPtr.Zero), 0, 0, tpLogs.Width, tpLogs.Height,
+                    SET_WINDOW_POS_FLAGS.SWP_NOACTIVATE |
+                    SET_WINDOW_POS_FLAGS.SWP_NOMOVE
                 );
             }
         }

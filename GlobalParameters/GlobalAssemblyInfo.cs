@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Below Average - Dylan Bickerstaff")]
 [assembly: AssemblyProduct("Below Average - Immediate Access")]
-[assembly: AssemblyCopyright("Copyright © 2020")]
+[assembly: AssemblyCopyright("Copyright Â© 2020")]
 [assembly: AssemblyTrademark("Below Average - Dylan Bickerstaff")]
 [assembly: AssemblyMetadata("Website", "https://github.com/belowaverage-org/ImmediateAccess")]
 [assembly: ComVisible(false)]

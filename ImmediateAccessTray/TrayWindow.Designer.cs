@@ -70,9 +70,7 @@
             // 
             // tabControl
             // 
-            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl.Controls.Add(this.tpStatus);
             this.tabControl.Controls.Add(this.tpLogs);
             this.tabControl.Controls.Add(this.tpAbout);
@@ -156,8 +154,7 @@
             // 
             this.lblServicePolicy.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblServicePolicy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.HelpProvider.SetHelpString(this.lblServicePolicy, "This row shows whether or not the Immediate Access service is configured to run i" +
-        "n Group Policy.");
+            this.HelpProvider.SetHelpString(this.lblServicePolicy, "This row shows whether or not the Immediate Access service is configured to run i" + "n Group Policy.");
             this.lblServicePolicy.Location = new System.Drawing.Point(155, 30);
             this.lblServicePolicy.Margin = new System.Windows.Forms.Padding(0);
             this.lblServicePolicy.Name = "lblServicePolicy";
@@ -171,8 +168,7 @@
             // 
             this.lblServicePolicyTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblServicePolicyTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HelpProvider.SetHelpString(this.lblServicePolicyTitle, "This row shows whether or not the Immediate Access service is configured to run i" +
-        "n Group Policy.");
+            this.HelpProvider.SetHelpString(this.lblServicePolicyTitle, "This row shows whether or not the Immediate Access service is configured to run i" + "n Group Policy.");
             this.lblServicePolicyTitle.Location = new System.Drawing.Point(0, 30);
             this.lblServicePolicyTitle.Margin = new System.Windows.Forms.Padding(0);
             this.lblServicePolicyTitle.Name = "lblServicePolicyTitle";
@@ -200,8 +196,7 @@
             // 
             this.lblNetStatus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblNetStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.HelpProvider.SetHelpString(this.lblNetStatus, "This row shows whether or not this PC can reach the internal network either throu" +
-        "gh the VPN or directly connected.");
+            this.HelpProvider.SetHelpString(this.lblNetStatus, "This row shows whether or not this PC can reach the internal network either throu" + "gh the VPN or directly connected.");
             this.lblNetStatus.Location = new System.Drawing.Point(155, 151);
             this.lblNetStatus.Margin = new System.Windows.Forms.Padding(0);
             this.lblNetStatus.Name = "lblNetStatus";
@@ -243,8 +238,7 @@
             // 
             this.lblNetStatusTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblNetStatusTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HelpProvider.SetHelpString(this.lblNetStatusTitle, "This row shows whether or not this PC can reach the internal network either throu" +
-        "gh the VPN or directly connected.");
+            this.HelpProvider.SetHelpString(this.lblNetStatusTitle, "This row shows whether or not this PC can reach the internal network either throu" + "gh the VPN or directly connected.");
             this.lblNetStatusTitle.Location = new System.Drawing.Point(0, 151);
             this.lblNetStatusTitle.Margin = new System.Windows.Forms.Padding(0);
             this.lblNetStatusTitle.Name = "lblNetStatusTitle";
@@ -486,8 +480,7 @@
             // 
             // lblTitle
             // 
-            this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTitle.AutoEllipsis = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI Light", 16F);
             this.lblTitle.Location = new System.Drawing.Point(8, 5);
@@ -528,7 +521,6 @@
             this.tlpAbout.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion
